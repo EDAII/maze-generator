@@ -43,7 +43,7 @@ class Cell{
     }
 
     checkNeighbors(){
-        
+        this.neighbors = [];
         let top = cells[this.index(this.x, this.y-1)];
         let right = cells[this.index(this.x + 1, this.y)];
         let bot = cells[this.index(this.x, this.y+1)];
@@ -65,6 +65,8 @@ class Cell{
         if(this.neighbors.length > 0){
             let rdm = floor(random(0, this.neighbors.length));
             return this.neighbors[rdm];
+        }else{
+            return undefined;
         }
 
     }

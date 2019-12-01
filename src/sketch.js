@@ -1,6 +1,7 @@
 const w = 40;
 let cols, rows;
 let cells = []; 
+let stack = [];
 let current; 
 
 
@@ -22,7 +23,7 @@ function setup(){
 
 function draw(){
     background(120);
-    frameRate(5);
+    // frameRate(5);
     for(let i = 0; i< cells.length; i++){
         cells[i].render();
     }
@@ -33,9 +34,13 @@ function draw(){
     if(next){
         next.visited = true;
 
+        stack.push(current);
+
         removeWalls(current, next);
 
         current = next;
+    }else if (stack.length > 0){
+      current = stack.pop();
     }
 }
 
