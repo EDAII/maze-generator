@@ -7,6 +7,7 @@ let current;
 
 function setup(){
 
+    text('word', 10, 30);
     createCanvas(800, 800);
     cols = floor(width/w);
     rows = floor(height/w);
@@ -19,6 +20,18 @@ function setup(){
     }
 
     current = cells[0];
+}
+function reset(){
+  cells = []; 
+  stack = [];
+  current = '';
+  setup() 
+}
+
+function keyTyped(){
+  if(key ===  'n'){
+    reset();
+  }
 }
 
 function draw(){
