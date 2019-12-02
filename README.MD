@@ -1,4 +1,4 @@
-# Lista 5 - Grafos
+# Lista 6 - Grafos
 ## Aluno
 | Matrícula | Nome |  
 |-----------------------|---------------------|  
@@ -10,4 +10,4 @@ O programa gera labirintos randômicos utilizando o algoritmo de busca em profun
 ### Como rodar o programa? 
 Para iniciar o programa basta executar o arquivo index.html no seu navegador.
 
-Também é possivel rodar o programa acessando o link: gabrieloak.github.io/maze-generator/ 
+Também é possivel rodar o programa acessando o link: [https://gabrieloak.github.io/maze-generator](https://gabrieloak.github.io/maze-generator/)
